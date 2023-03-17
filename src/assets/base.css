@@ -1,0 +1,77 @@
+/* color palette from <https://github.com/vuejs/theme> */
+:root {
+  --vt-c-white: #ffffff;
+  --vt-c-white-soft: #f8f8f8;
+  --vt-c-white-mute: #f2f2f2;
+
+  --vt-c-black: #181818;
+  --vt-c-black-soft: #222222;
+  --vt-c-black-mute: #282828;
+
+  --vt-c-indigo: #2c3e50;
+
+  --vt-c-divider-light-1: #0c1f2c;
+  --vt-c-divider-light-2: #0c1f2c;
+  --vt-c-divider-dark-1: #0c1f2c;
+  --vt-c-divider-dark-2: #0c1f2c;
+
+  --vt-c-text-light-1: var(--vt-c-indigo);
+  --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
+  --vt-c-text-dark-1: var(--vt-c-white);
+  --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
+}
+
+/* semantic color variables for this project */
+:root {
+  --color-background: var(--vt-c-white);
+  --color-background-soft: var(--vt-c-white-soft);
+  --color-background-mute: var(--vt-c-white-mute);
+
+  --color-border: var(--vt-c-divider-light-2);
+  --color-border-hover: var(--vt-c-divider-light-1);
+
+  --color-heading: var(--vt-c-text-light-1);
+  --color-text: var(--vt-c-text-light-1);
+
+  --section-gap: 160px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: var(--vt-c-black);
+    --color-background-soft: var(--vt-c-black-soft);
+    --color-background-mute: var(--vt-c-black-mute);
+
+    --color-border: var(--vt-c-divider-dark-2);
+    --color-border-hover: var(--vt-c-divider-dark-1);
+
+    --color-heading: var(--vt-c-text-dark-1);
+    --color-text: var(--vt-c-text-dark-2);
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  position: relative;
+  font-weight: normal;
+}
+
+body {
+  min-height: 100vh;
+  color: #dddbcb;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='1000' preserveAspectRatio='none' viewBox='0 0 1440 1000'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1107%26quot%3b)' fill='none'%3e%3crect width='1440' height='1000' x='0' y='0' fill='url(%23SvgjsLinearGradient1108)'%3e%3c/rect%3e%3cpath d='M1464 1000L0 1000 L0 491.58Q108.15 479.73%2c 120 587.88Q161.19 509.07%2c 240 550.25Q269.94 508.19%2c 312 538.14Q416.92 523.06%2c 432 627.97Q460.92 536.89%2c 552 565.81Q553.55 495.36%2c 624 496.91Q653.82 454.73%2c 696 484.54Q746.61 463.15%2c 768 513.77Q878.1 551.87%2c 840 661.97Q831.75 533.72%2c 960 525.47Q977.5 470.97%2c 1032 488.47Q1076.05 460.52%2c 1104 504.58Q1204.45 485.03%2c 1224 585.49Q1278.14 519.63%2c 1344 573.77Q1431.17 540.94%2c 1464 628.12z' fill='%23182f5d'%3e%3c/path%3e%3cpath d='M1536 1000L0 1000 L0 732.58Q6.87 667.45%2c 72 674.32Q126.13 608.46%2c 192 662.59Q251.27 649.87%2c 264 709.14Q344.17 669.31%2c 384 749.48Q391.92 685.4%2c 456 693.32Q468.04 633.36%2c 528 645.4Q605.1 602.5%2c 648 679.6Q660.58 620.18%2c 720 632.76Q745.95 586.71%2c 792 612.66Q872.34 573%2c 912 653.33Q1011.34 632.67%2c 1032 732.02Q1035.76 663.77%2c 1104 667.53Q1146.35 589.88%2c 1224 632.23Q1258.08 594.31%2c 1296 628.38Q1377.25 589.63%2c 1416 670.88Q1516.35 651.23%2c 1536 751.57z' fill='%2325467d'%3e%3c/path%3e%3cpath d='M1464 1000L0 1000 L0 773.71Q25.51 727.22%2c 72 752.73Q170.17 730.9%2c 192 829.08Q271.99 789.07%2c 312 869.06Q323.31 760.37%2c 432 771.67Q452.23 719.9%2c 504 740.13Q574.35 690.48%2c 624 760.82Q709.89 774.71%2c 696 860.6Q779.38 823.98%2c 816 907.35Q833.87 853.22%2c 888 871.09Q913.98 825.07%2c 960 851.05Q965.67 784.72%2c 1032 790.39Q1053.37 739.75%2c 1104 761.12Q1169.64 706.76%2c 1224 772.41Q1349.5 777.91%2c 1344 903.41Q1329.38 768.79%2c 1464 754.17z' fill='rgba(27%2c 155%2c 172%2c 1)'%3e%3c/path%3e%3cpath d='M1560 1000L0 1000 L0 1029.83Q-28.92 928.91%2c 72 899.99Q94.67 850.66%2c 144 873.34Q186.38 843.73%2c 216 886.11Q273.92 872.03%2c 288 929.94Q320.24 842.18%2c 408 874.43Q451.99 846.41%2c 480 890.4Q569.26 907.66%2c 552 996.93Q611.52 984.45%2c 624 1043.98Q646.2 994.18%2c 696 1016.38Q675.56 923.94%2c 768 903.5Q810 873.5%2c 840 915.5Q881.46 884.96%2c 912 926.43Q1002.13 944.56%2c 984 1034.69Q971.9 902.59%2c 1104 890.49Q1173.92 888.41%2c 1176 958.34Q1230.54 940.88%2c 1248 995.42Q1294.5 921.92%2c 1368 968.42Q1424.26 952.68%2c 1440 1008.94Q1512.3 961.24%2c 1560 1033.53z' fill='white'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1107'%3e%3crect width='1440' height='1000' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='7.64%25' y1='-11%25' x2='92.36%25' y2='111%25' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1108'%3e%3cstop stop-color='%230e2a47' offset='0'%3e%3c/stop%3e%3cstop stop-color='rgba(0%2c 69%2c 158%2c 0.52)' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  transition: color 0.5s, background-color 0.5s;
+  line-height: 1.6;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
