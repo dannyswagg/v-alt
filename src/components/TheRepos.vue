@@ -1,8 +1,6 @@
 <template>
   <div class="text-center">
-    <h1
-      class="lg:text-5xl md:text-5xl sm:4xl mb-5 mt-10 green uppercase font-bold"
-    >
+    <h1 class="text-4xl mb-5 mt-10 green uppercase font-bold">
       My Repositories
     </h1>
     <div v-if="loading" class="text-3xl animate-bounce py-20">Loading...</div>
