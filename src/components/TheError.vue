@@ -1,7 +1,9 @@
 <template>
   <div class="text-center">
-    <h1>Error!!!</h1>
-    <h2>Page Not Found</h2>
+    <h1 class="text-5xl tracking-wider uppercase text-[#0c1f2c] font-bold">
+      Err<span>o</span>r!!!
+    </h1>
+    <h2 class="text-4xl">Page Not Found</h2>
   </div>
 </template>
 
