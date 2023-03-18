@@ -17,9 +17,9 @@ import HelloWorld from "./components/HelloWorld.vue";
       <HelloWorld msg="You did it!" />
 
       <nav class="mb-10">
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/repos">Repositories</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
+        <RouterLink class="font-bold" to="/">Home</RouterLink>
+        <RouterLink class="font-bold" to="/repos">Repositories</RouterLink>
+        <RouterLink class="font-bold" to="/about">About</RouterLink>
       </nav>
     </div>
   </header>
@@ -40,10 +40,8 @@ header {
 
 nav {
   width: 100%;
-  font-size: 12px;
   text-align: center;
   margin-top: 2rem;
-  font-weight: 700;
   text-transform: uppercase;
 }
 
@@ -85,8 +83,7 @@ nav a:first-of-type {
   nav {
     text-align: left;
     margin-left: -1rem;
-    font-size: 1rem;
-
+    font-size: 1.1rem;
     padding: 1rem 0;
     margin-top: 1rem;
   }
