@@ -29,11 +29,11 @@ const router = createRouter({
       // which is lazy-loaded when the route is visited.
       component: () => import('../views/AboutView.vue'),
     },
-    // {
-    //   path: "/:pathMatch(.*)*",
-    //   name: "404",
-    //   component: () =>import("../views/ErrorView.vue")
-    // },
+    {
+      path: "/:pathMatch(.*)*",
+      name: "404",
+      component: () =>import("../views/ErrorView.vue")
+    },
     {path: "/404",
     name: "page-not-found",
     component: () => import("../views/ErrorView.vue")
@@ -41,7 +41,12 @@ const router = createRouter({
     {
       path: "/:catchAll(.*)",
       redirect: "/404"
-    }
+    },
+    {
+      path: "/:catchAll(.*)",
+      name: "page-not-found",
+      component: () => import("../views/ErrorView.vue")
+    },
   ],
 })
 
