@@ -27,14 +27,14 @@ const router = createRouter({
       component: () => import('../views/AboutView.vue'),
     },
     {
-      path: "/404",
+      path: '/:pathMatch(.*)*',
       name: "page-not-found",
       component: () =>import("../views/ErrorView.vue")
     },
-    {
-      path: "/:catchAll(.*)",
-      redirect: "/404"
-    },
+    // {
+    //   path: "/:catchAll(.*)",
+    //   redirect: "/404"
+    // },
     {
       path: "/:catchAll(.*)",
       name:"page-not-found",
